@@ -1,0 +1,14 @@
+{
+  "Author": "liliekintsugi",
+  "Name": "HunterBuddy",
+  "Punchline": "Farm automatique de mobs pour récupérer tes matériaux de craft.",
+  "Description": "Maintiens une liste d'items à farmer. HunterBuddy navigue jusqu'aux spawns (via vnavmesh), engage le combat (optionnel via RotationSolverReborn), loote et boucle jusqu'à avoir les quantités souhaitées. Commandes : /hunterbuddy, /hb",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "farm",
+    "hunt",
+    "combat",
+    "crafting",
+    "automation"
+  ]
+}
