@@ -4,14 +4,15 @@ namespace HunterBuddy.IPC;
 
 public class RotationSolverIpc : IDisposable
 {
-    // RotationSolverReborn v4+ — StateCommandType: 0=Off, 1=Auto, 2=Manual
-    private ICallGateSubscriber<byte, object>? _setState;
+    // Vérifié sur https://github.com/FFXIV-CombatReborn/RotationSolverReborn
+    // StateCommandType : 0=Off, 1=Auto, 2=TargetOnly, 3=Manual
+    private ICallGateSubscriber<byte, object>? _changeMode;
 
     public RotationSolverIpc()
     {
         try
         {
-            _setState = Plugin.PluginInterface.GetIpcSubscriber<byte, object>("RotationSolver.SetState");
+            _changeMode = Plugin.PluginInterface.GetIpcSubscriber<byte, object>("RotationSolverReborn.ChangeOperatingMode");
         }
         catch
         {
@@ -21,14 +22,14 @@ public class RotationSolverIpc : IDisposable
 
     public void Enable()
     {
-        try { _setState?.InvokeFunc(1); } // Auto
-        catch (Exception e) { Plugin.Log.Warning(e, "RotationSolver.Enable échoué."); }
+        try { _changeMode?.InvokeFunc(1); } // Auto
+        catch (Exception e) { Plugin.Log.Warning(e, "RSR.ChangeOperatingMode(Auto) échoué."); }
     }
 
     public void Disable()
     {
-        try { _setState?.InvokeFunc(0); } // Off
-        catch (Exception e) { Plugin.Log.Warning(e, "RotationSolver.Disable échoué."); }
+        try { _changeMode?.InvokeFunc(0); } // Off
+        catch (Exception e) { Plugin.Log.Warning(e, "RSR.ChangeOperatingMode(Off) échoué."); }
     }
 
     public void Dispose() { }
