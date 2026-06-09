@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>HunterBuddy</RootNamespace>
     <AssemblyName>HunterBuddy</AssemblyName>
     <Version>1.0.0.0</Version>
@@ -20,12 +20,8 @@
       <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="ImGui.NET">
-      <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="ImGuiScene">
-      <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
+    <Reference Include="Dalamud.Bindings.ImGui">
+      <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.Bindings.ImGui.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="FFXIVClientStructs">

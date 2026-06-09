@@ -3,7 +3,7 @@ using FFXIVClientStructs.FFXIV.Client.Game;
 using HunterBuddy.Models;
 using HunterBuddy.Services;
 using ImGuiNET;
-using Lumina.Excel.GeneratedSheets;
+using Lumina.Excel.Sheets;
 using System.Numerics;
 
 namespace HunterBuddy.Windows;
