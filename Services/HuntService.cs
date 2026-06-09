@@ -60,7 +60,7 @@ public class HuntService : IDisposable
     public void OnFrameworkUpdate(IFramework _)
     {
         if (!IsActive) return;
-        if (Plugin.ClientState.LocalPlayer == null) { Stop(); return; }
+        if (Plugin.ObjectTable.LocalPlayer == null) { Stop(); return; }
 
         try
         {
@@ -132,7 +132,7 @@ public class HuntService : IDisposable
             return;
         }
 
-        var player = Plugin.ClientState.LocalPlayer!;
+        var player = Plugin.ObjectTable.LocalPlayer!;
         var dist = Dist2D(player.Position.X, player.Position.Z, _currentSpawn.X, _currentSpawn.Z);
 
         if (dist <= Plugin.Config.NavigationTolerance)
@@ -190,7 +190,7 @@ public class HuntService : IDisposable
             return;
         }
 
-        var player = Plugin.ClientState.LocalPlayer!;
+        var player = Plugin.ObjectTable.LocalPlayer!;
         if (player.StatusFlags.HasFlag(StatusFlags.InCombat))
         {
             if (Plugin.Config.UseRotationSolver)
