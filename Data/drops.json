@@ -1,30 +1,5873 @@
 {
   "version": "1.0",
-  "_info": "Généré depuis les données FFXIV Teamcraft (https://github.com/ffxiv-teamcraft/ffxiv-teamcraft). Clé = ItemId (uint). Voir scripts/fetch-drops.py pour régénérer après un patch.",
+  "_info": "Généré par scripts/fetch_drops.py depuis Garland Tools. bNpcNameId = garlandMobId % 10^10. positions[] vide : le plugin scanne la zone entière sans nav fixe.",
   "drops": {
-    "4576": [
+    "2": [
       {
-        "bNpcNameId": 1845,
-        "mobName": "Aldgoat",
-        "territoryId": 145,
-        "zoneName": "Central Thanalan",
-        "positions": [
-          { "x": 20.3, "y": -1.2, "z": -0.5 },
-          { "x": 23.1, "y": -1.0, "z":  4.2 }
-        ],
-        "dropRate": 0.5
+        "bNpcNameId": 116,
+        "mobName": "Fire Sprite",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1194,
+        "mobName": "Firemane",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
       }
     ],
-    "5289": [
+    "10": [
       {
-        "bNpcNameId": 2920,
-        "mobName": "Diremite",
-        "territoryId": 152,
-        "zoneName": "Eastern Thanalan",
-        "positions": [
-          { "x": 14.5, "y": 0.0, "z": -18.3 }
-        ],
-        "dropRate": 0.4
+        "bNpcNameId": 115,
+        "mobName": "Wind Sprite",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1979,
+        "mobName": "Storm Sprite",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2045,
+        "mobName": "Deep-stained Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "9": [
+      {
+        "bNpcNameId": 114,
+        "mobName": "Ice Sprite",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1430,
+        "mobName": "Lutin",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 114,
+        "mobName": "Ice Sprite",
+        "territoryId": 292,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 114,
+        "mobName": "Ice Sprite",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3026,
+        "mobName": "Glacier Sprite",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "12": [
+      {
+        "bNpcNameId": 117,
+        "mobName": "Lightning Sprite",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 117,
+        "mobName": "Lightning Sprite",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2190,
+        "mobName": "Lightning Spark",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2043,
+        "mobName": "Deep-stained Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2044,
+        "mobName": "Deep-stained Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "13": [
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2043,
+        "mobName": "Deep-stained Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 56,
+        "mobName": "Water Sprite",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "11": [
+      {
+        "bNpcNameId": 113,
+        "mobName": "Earth Sprite",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6": [
+      {
+        "bNpcNameId": 117,
+        "mobName": "Lightning Sprite",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 117,
+        "mobName": "Lightning Sprite",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 117,
+        "mobName": "Lightning Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4": [
+      {
+        "bNpcNameId": 115,
+        "mobName": "Wind Sprite",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5": [
+      {
+        "bNpcNameId": 113,
+        "mobName": "Earth Sprite",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "8": [
+      {
+        "bNpcNameId": 2566,
+        "mobName": "Mimic",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 116,
+        "mobName": "Fire Sprite",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 912,
+        "mobName": "Wildfire Sprite",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "7": [
+      {
+        "bNpcNameId": 445,
+        "mobName": "Stagnant Water Sprite",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 56,
+        "mobName": "Water Sprite",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "2931": [
+      {
+        "bNpcNameId": 1823,
+        "mobName": "2nd Cohort Eques",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1825,
+        "mobName": "2nd Cohort Signifer",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1824,
+        "mobName": "2nd Cohort Secutor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1821,
+        "mobName": "2nd Cohort Hoplomachus",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1822,
+        "mobName": "2nd Cohort Laquearius",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1817,
+        "mobName": "4th Cohort Eques",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1819,
+        "mobName": "4th Cohort Signifer",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1818,
+        "mobName": "4th Cohort Secutor",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1815,
+        "mobName": "4th Cohort Hoplomachus",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1816,
+        "mobName": "4th Cohort Laquearius",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 59,
+        "mobName": "3rd Cohort Eques",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 61,
+        "mobName": "3rd Cohort Signifer",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 60,
+        "mobName": "3rd Cohort Secutor",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 58,
+        "mobName": "3rd Cohort Laquearius",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3177,
+        "mobName": "6th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3180,
+        "mobName": "6th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3178,
+        "mobName": "6th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3176,
+        "mobName": "6th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3181,
+        "mobName": "6th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2983,
+        "mobName": "5th Cohort Evocatus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1811,
+        "mobName": "5th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1813,
+        "mobName": "5th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1812,
+        "mobName": "5th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1809,
+        "mobName": "5th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1810,
+        "mobName": "5th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1663,
+        "mobName": "Aulus Rem Vulso",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2351,
+        "mobName": "Imperial Engineer",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 57,
+        "mobName": "3rd Cohort Decurion",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2120,
+        "mobName": "7th Cohort Eques",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3334,
+        "mobName": "7th Cohort Signifer",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3110,
+        "mobName": "7th Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 53,
+        "mobName": "3rd Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4758": [
+      {
+        "bNpcNameId": 262,
+        "mobName": "Star Marmot",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4769": [
+      {
+        "bNpcNameId": 2060,
+        "mobName": "Spotted Mudpuppy",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 645,
+        "mobName": "Mudpuppy",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2014,
+        "mobName": "Emerald Salamander",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1831,
+        "mobName": "Axolotl",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4768": [
+      {
+        "bNpcNameId": 1608,
+        "mobName": "Butting Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1313,
+        "mobName": "Large Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 894,
+        "mobName": "Rutting Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4770": [
+      {
+        "bNpcNameId": 1655,
+        "mobName": "Alpgrot Orobon",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 307,
+        "mobName": "Angler",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2191,
+        "mobName": "Dune Angler",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 235,
+        "mobName": "Bigmouth Orobon",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4771": [
+      {
+        "bNpcNameId": 850,
+        "mobName": "Shearing Sheridan",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 561,
+        "mobName": "Megalocrab",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3007,
+        "mobName": "Beryl Crab",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 860,
+        "mobName": "Old Six-arms",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4760": [
+      {
+        "bNpcNameId": 393,
+        "mobName": "Wild Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 859,
+        "mobName": "Gluttonous Gertrude",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 394,
+        "mobName": "Fat Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4765": [
+      {
+        "bNpcNameId": 3027,
+        "mobName": "Ibex",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3,
+        "mobName": "Antelope Doe",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 514,
+        "mobName": "Sirocco",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1992,
+        "mobName": "Scarred Antelope",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4761": [
+      {
+        "bNpcNameId": 577,
+        "mobName": "Untamed Shrew",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1317,
+        "mobName": "Ironquill Tuco-tuco",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 306,
+        "mobName": "Tuco-tuco",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1656,
+        "mobName": "Diamond-tooth Hedgemole",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 958,
+        "mobName": "Clever Hedgemole",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 409,
+        "mobName": "Moraby Mole",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 410,
+        "mobName": "Sewer Mole",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 403,
+        "mobName": "Hedgemole",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4775": [
+      {
+        "bNpcNameId": 341,
+        "mobName": "Apkallu",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4767": [
+      {
+        "bNpcNameId": 411,
+        "mobName": "Grass Raptor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2,
+        "mobName": "Ruins Runner",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 412,
+        "mobName": "Velociraptor",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2375,
+        "mobName": "Territorial Raptor",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 130,
+        "mobName": "Lindwurm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2659,
+        "mobName": "Eoraptor",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4766": [
+      {
+        "bNpcNameId": 879,
+        "mobName": "Elder Longhorn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 274,
+        "mobName": "Myotragus Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 273,
+        "mobName": "Myotragus Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2050,
+        "mobName": "Mourning Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2049,
+        "mobName": "Mourning Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 881,
+        "mobName": "Longhorn Nannygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 880,
+        "mobName": "Longhorn Billygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4774": [
+      {
+        "bNpcNameId": 2029,
+        "mobName": "Pteroc Matron",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 62,
+        "mobName": "Pteroc",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1526,
+        "mobName": "Peryton",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1463,
+        "mobName": "Dark Matter Pteroc",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4794": [
+      {
+        "bNpcNameId": 433,
+        "mobName": "Divan Mold",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 438,
+        "mobName": "Prisoner's Delight",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2576,
+        "mobName": "Demonstool",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1541,
+        "mobName": "Eftstool",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 48,
+        "mobName": "Toadstool",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 141,
+        "mobName": "Parasite Funguar",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 47,
+        "mobName": "Forest Funguar",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 166,
+        "mobName": "Sylph Bonnet",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 220,
+        "mobName": "Faerie Funguar",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 699,
+        "mobName": "Malevolent Fungus",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4759": [
+      {
+        "bNpcNameId": 392,
+        "mobName": "Lost Lamb",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4773": [
+      {
+        "bNpcNameId": 393,
+        "mobName": "Wild Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 859,
+        "mobName": "Gluttonous Gertrude",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 394,
+        "mobName": "Fat Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4834": [
+      {
+        "bNpcNameId": 2587,
+        "mobName": "Coliseum Lemur",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 5,
+        "mobName": "Opo-opo",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 408,
+        "mobName": "Galago",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1287,
+        "mobName": "Gully Galago",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "4850": [
+      {
+        "bNpcNameId": 632,
+        "mobName": "Huge Hornet",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 696,
+        "mobName": "Hornet Cloud",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 395,
+        "mobName": "Bee Cloud",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 953,
+        "mobName": "Flower Wespe",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 641,
+        "mobName": "Wespe",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 201,
+        "mobName": "Syrphid Cloud",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 54,
+        "mobName": "Hornet Swarm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1983,
+        "mobName": "Killer Hornet Cloud",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 564,
+        "mobName": "Potter Wasp Swarm",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1596,
+        "mobName": "Sandstorm",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1568,
+        "mobName": "Dung Wespe",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1575,
+        "mobName": "Temple Bee",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5105": [
+      {
+        "bNpcNameId": 1826,
+        "mobName": "2nd Cohort Vanguard",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1820,
+        "mobName": "4th Cohort Vanguard",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3179,
+        "mobName": "6th Cohort Vanguard",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1814,
+        "mobName": "5th Cohort Vanguard",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 269,
+        "mobName": "Magitek Vanguard",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2116,
+        "mobName": "Magitek Vanguard F-1",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2089,
+        "mobName": "Magitek Vanguard H-1",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2089,
+        "mobName": "Magitek Vanguard H-1",
+        "territoryId": 651,
+        "zoneName": "Private Mansion - Shirogane",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2310,
+        "mobName": "3rd Cohort Vanguard",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 269,
+        "mobName": "Magitek Vanguard",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1509,
+        "mobName": "Vanguard Prototype",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5104": [
+      {
+        "bNpcNameId": 1826,
+        "mobName": "2nd Cohort Vanguard",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1820,
+        "mobName": "4th Cohort Vanguard",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3179,
+        "mobName": "6th Cohort Vanguard",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1814,
+        "mobName": "5th Cohort Vanguard",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 269,
+        "mobName": "Magitek Vanguard",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2116,
+        "mobName": "Magitek Vanguard F-1",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2089,
+        "mobName": "Magitek Vanguard H-1",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2089,
+        "mobName": "Magitek Vanguard H-1",
+        "territoryId": 651,
+        "zoneName": "Private Mansion - Shirogane",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2310,
+        "mobName": "3rd Cohort Vanguard",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 269,
+        "mobName": "Magitek Vanguard",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1509,
+        "mobName": "Vanguard Prototype",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5107": [
+      {
+        "bNpcNameId": 575,
+        "mobName": "Silver Coblyn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 277,
+        "mobName": "Copper Coblyn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 901,
+        "mobName": "Prism Coblyn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 276,
+        "mobName": "Rusty Coblyn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5111": [
+      {
+        "bNpcNameId": 278,
+        "mobName": "Lead Coblyn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1671,
+        "mobName": "Asbestos Coblyn",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1836,
+        "mobName": "Synthetic Doblyn",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 629,
+        "mobName": "Copperbell Coblyn",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2275,
+        "mobName": "Chalcopyrite Coblyn",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1598,
+        "mobName": "Schorl Doblyn",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 275,
+        "mobName": "Quartz Doblyn",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2008,
+        "mobName": "Sphene Doblyn",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2005,
+        "mobName": "Ceruleum Coblyn",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5229": [
+      {
+        "bNpcNameId": 30,
+        "mobName": "Clay Golem",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2188,
+        "mobName": "Pumice Golem",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1691,
+        "mobName": "Stone Marionette",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1692,
+        "mobName": "Marble Marionette",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1693,
+        "mobName": "Megalith Marionette",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2522,
+        "mobName": "U'Ghamaro Golem",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 4108,
+        "mobName": "Gabbro Golem",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1527,
+        "mobName": "Number 128",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 365,
+        "mobName": "Basalt Golem",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1461,
+        "mobName": "Dark Matter Golem",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 131,
+        "mobName": "Crater Golem",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1981,
+        "mobName": "Chert Golem",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 280,
+        "mobName": "Sandstone Golem",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1601,
+        "mobName": "Arkose Golem",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 558,
+        "mobName": "Nunyunuwi",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3058,
+        "mobName": "Qarn Guardian",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1569,
+        "mobName": "Temple Guardian",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5263": [
+      {
+        "bNpcNameId": 1593,
+        "mobName": "Quicksand Basilisk",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 304,
+        "mobName": "Basilisk",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5296": [
+      {
+        "bNpcNameId": 879,
+        "mobName": "Elder Longhorn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 274,
+        "mobName": "Myotragus Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 273,
+        "mobName": "Myotragus Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2050,
+        "mobName": "Mourning Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2049,
+        "mobName": "Mourning Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 881,
+        "mobName": "Longhorn Nannygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 880,
+        "mobName": "Longhorn Billygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5300": [
+      {
+        "bNpcNameId": 1976,
+        "mobName": "Inflated Nix",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 26,
+        "mobName": "Gigantoad",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2015,
+        "mobName": "Heket",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 217,
+        "mobName": "Laughing Toad",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1653,
+        "mobName": "Bone Nix",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1543,
+        "mobName": "Nether Nix",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 27,
+        "mobName": "Nix",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 164,
+        "mobName": "Dreamtoad",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2279,
+        "mobName": "Copperbell Nix",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3087,
+        "mobName": "Wivre Fodder",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5310": [
+      {
+        "bNpcNameId": 411,
+        "mobName": "Grass Raptor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2,
+        "mobName": "Ruins Runner",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 412,
+        "mobName": "Velociraptor",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2375,
+        "mobName": "Territorial Raptor",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 130,
+        "mobName": "Lindwurm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2659,
+        "mobName": "Eoraptor",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5306": [
+      {
+        "bNpcNameId": 2586,
+        "mobName": "Pit Basilisk",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 303,
+        "mobName": "Sandskin Peiste",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1993,
+        "mobName": "Rockskin Peiste",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1593,
+        "mobName": "Quicksand Basilisk",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1293,
+        "mobName": "Wyrmhound",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 304,
+        "mobName": "Basilisk",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5292": [
+      {
+        "bNpcNameId": 366,
+        "mobName": "Giant Pelican",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1515,
+        "mobName": "Sekhmet",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2012,
+        "mobName": "Restless Raptor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 281,
+        "mobName": "Axe Beak",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2587,
+        "mobName": "Coliseum Lemur",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1191,
+        "mobName": "Rudis Beak",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 965,
+        "mobName": "Plainstrider",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 5,
+        "mobName": "Opo-opo",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 224,
+        "mobName": "Ziz",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1523,
+        "mobName": "Ose",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 407,
+        "mobName": "Ringtail",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2020,
+        "mobName": "Leaping Ringtail",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1465,
+        "mobName": "Dark Matter Pelican",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1316,
+        "mobName": "Giant Oxpecker",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 28,
+        "mobName": "Coeurl Pup",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1234,
+        "mobName": "Slasher",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2376,
+        "mobName": "Territorial Pelican",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1312,
+        "mobName": "Lone Coeurl",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 120,
+        "mobName": "Anole",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 51,
+        "mobName": "Alpha Anole",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 221,
+        "mobName": "Brood Ziz",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 195,
+        "mobName": "Hoglet",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 605,
+        "mobName": "Young Anole",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 130,
+        "mobName": "Lindwurm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 223,
+        "mobName": "Ziz Gorlin",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 449,
+        "mobName": "Jackanapes",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 535,
+        "mobName": "Jackanapes's Bean-bearer",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 222,
+        "mobName": "Molted Ziz",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 6,
+        "mobName": "Lemur",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 14,
+        "mobName": "Wild Hoglet",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 16,
+        "mobName": "Wild Boar",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3081,
+        "mobName": "Pack Ziz",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1204,
+        "mobName": "Chopper",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 393,
+        "mobName": "Wild Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 859,
+        "mobName": "Gluttonous Gertrude",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 966,
+        "mobName": "Patripatan",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 394,
+        "mobName": "Fat Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1181,
+        "mobName": "Rothlyt Pelican",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1287,
+        "mobName": "Gully Galago",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1280,
+        "mobName": "Great Yellow Pelican",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1283,
+        "mobName": "Sable Back",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1297,
+        "mobName": "Deep Jungle Coeurl",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1281,
+        "mobName": "Blue Back",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5291": [
+      {
+        "bNpcNameId": 289,
+        "mobName": "Eft",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 216,
+        "mobName": "Toxic Toad",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 282,
+        "mobName": "Hammer Beak",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 262,
+        "mobName": "Star Marmot",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 873,
+        "mobName": "Vodyanoi",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 265,
+        "mobName": "Sandtoad",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 865,
+        "mobName": "Doomed Gigantoad",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 417,
+        "mobName": "Wharf Rat",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 37,
+        "mobName": "Ground Squirrel",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 5,
+        "mobName": "Opo-opo",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2156,
+        "mobName": "Chinchilla",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2003,
+        "mobName": "White Death",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 417,
+        "mobName": "Wharf Rat",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 678,
+        "mobName": "Rat King",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1674,
+        "mobName": "Carrier Ziz",
+        "territoryId": 292,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 408,
+        "mobName": "Galago",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 417,
+        "mobName": "Wharf Rat",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 678,
+        "mobName": "Rat King",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 349,
+        "mobName": "Rivertoad",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 391,
+        "mobName": "Salamander",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 196,
+        "mobName": "Black Eft",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 592,
+        "mobName": "Lumber Toad",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 170,
+        "mobName": "Deepvoid Deathmouse",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 228,
+        "mobName": "Bark Eft",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1294,
+        "mobName": "Surf Eft",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1282,
+        "mobName": "Violet Back",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1296,
+        "mobName": "Violet Back",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5303": [
+      {
+        "bNpcNameId": 1975,
+        "mobName": "Tusked Hog",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 15,
+        "mobName": "Wild Hog",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 16,
+        "mobName": "Wild Boar",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1667,
+        "mobName": "Phaia",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 15,
+        "mobName": "Wild Hog",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5320": [
+      {
+        "bNpcNameId": 1985,
+        "mobName": "Heavy Banemite",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 11,
+        "mobName": "Banemite",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 9,
+        "mobName": "Miteling",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2836,
+        "mobName": "Tam-Tara Diremite",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2835,
+        "mobName": "Tam-Tara Banemite",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2834,
+        "mobName": "Tam-Tara Miteling",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2033,
+        "mobName": "Banemite Straggler",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2034,
+        "mobName": "Miteling Straggler",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2577,
+        "mobName": "Madmite",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1545,
+        "mobName": "Vale Diremite",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1544,
+        "mobName": "Vale Banemite",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3054,
+        "mobName": "Temple Mite",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5308": [
+      {
+        "bNpcNameId": 795,
+        "mobName": "Ornery Karakul",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1427,
+        "mobName": "Downy Dunstan",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5317": [
+      {
+        "bNpcNameId": 352,
+        "mobName": "Jungle Coeurl",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2592,
+        "mobName": "Pit Coeurl",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2750,
+        "mobName": "Pit Coeurl Pup",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2751,
+        "mobName": "Pit Torama",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 106,
+        "mobName": "Coeurl",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2192,
+        "mobName": "Young Coeurl",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1462,
+        "mobName": "Dark Matter Coeurl",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1297,
+        "mobName": "Deep Jungle Coeurl",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2658,
+        "mobName": "Deep Jungle Torama",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5322": [
+      {
+        "bNpcNameId": 411,
+        "mobName": "Grass Raptor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2,
+        "mobName": "Ruins Runner",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 412,
+        "mobName": "Velociraptor",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2375,
+        "mobName": "Territorial Raptor",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 130,
+        "mobName": "Lindwurm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2659,
+        "mobName": "Eoraptor",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5316": [
+      {
+        "bNpcNameId": 1688,
+        "mobName": "Recluse Hippogryph",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1444,
+        "mobName": "Gwyllgi",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 789,
+        "mobName": "Hippogryph",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2276,
+        "mobName": "Pit Hippogryph",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5318": [
+      {
+        "bNpcNameId": 577,
+        "mobName": "Untamed Shrew",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 318,
+        "mobName": "Snapping Shrew",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 574,
+        "mobName": "Snipping Shrew",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1317,
+        "mobName": "Ironquill Tuco-tuco",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 306,
+        "mobName": "Tuco-tuco",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1656,
+        "mobName": "Diamond-tooth Hedgemole",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 958,
+        "mobName": "Clever Hedgemole",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 409,
+        "mobName": "Moraby Mole",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 410,
+        "mobName": "Sewer Mole",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 403,
+        "mobName": "Hedgemole",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5340": [
+      {
+        "bNpcNameId": 1823,
+        "mobName": "2nd Cohort Eques",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1825,
+        "mobName": "2nd Cohort Signifer",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1824,
+        "mobName": "2nd Cohort Secutor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1821,
+        "mobName": "2nd Cohort Hoplomachus",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1822,
+        "mobName": "2nd Cohort Laquearius",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1817,
+        "mobName": "4th Cohort Eques",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1819,
+        "mobName": "4th Cohort Signifer",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1818,
+        "mobName": "4th Cohort Secutor",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1815,
+        "mobName": "4th Cohort Hoplomachus",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1816,
+        "mobName": "4th Cohort Laquearius",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 59,
+        "mobName": "3rd Cohort Eques",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 61,
+        "mobName": "3rd Cohort Signifer",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 60,
+        "mobName": "3rd Cohort Secutor",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 58,
+        "mobName": "3rd Cohort Laquearius",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3177,
+        "mobName": "6th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3180,
+        "mobName": "6th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3178,
+        "mobName": "6th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3176,
+        "mobName": "6th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3181,
+        "mobName": "6th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2983,
+        "mobName": "5th Cohort Evocatus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1811,
+        "mobName": "5th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1813,
+        "mobName": "5th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1812,
+        "mobName": "5th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1809,
+        "mobName": "5th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1810,
+        "mobName": "5th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1663,
+        "mobName": "Aulus Rem Vulso",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2351,
+        "mobName": "Imperial Engineer",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 57,
+        "mobName": "3rd Cohort Decurion",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2120,
+        "mobName": "7th Cohort Eques",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3334,
+        "mobName": "7th Cohort Signifer",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3110,
+        "mobName": "7th Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 53,
+        "mobName": "3rd Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5345": [
+      {
+        "bNpcNameId": 1985,
+        "mobName": "Heavy Banemite",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 11,
+        "mobName": "Banemite",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 9,
+        "mobName": "Miteling",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2836,
+        "mobName": "Tam-Tara Diremite",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2835,
+        "mobName": "Tam-Tara Banemite",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2834,
+        "mobName": "Tam-Tara Miteling",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2033,
+        "mobName": "Banemite Straggler",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2034,
+        "mobName": "Miteling Straggler",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 92,
+        "mobName": "Antares",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 443,
+        "mobName": "Comesmite",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 444,
+        "mobName": "Graffias",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 157,
+        "mobName": "Cell Mite",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2577,
+        "mobName": "Madmite",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1545,
+        "mobName": "Vale Diremite",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1544,
+        "mobName": "Vale Banemite",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3054,
+        "mobName": "Temple Mite",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5348": [
+      {
+        "bNpcNameId": 341,
+        "mobName": "Apkallu",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5347": [
+      {
+        "bNpcNameId": 795,
+        "mobName": "Ornery Karakul",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1427,
+        "mobName": "Downy Dunstan",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5319": [
+      {
+        "bNpcNameId": 3027,
+        "mobName": "Ibex",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 4,
+        "mobName": "Antelope Stag",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3,
+        "mobName": "Antelope Doe",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 514,
+        "mobName": "Sirocco",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1992,
+        "mobName": "Scarred Antelope",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5349": [
+      {
+        "bNpcNameId": 1503,
+        "mobName": "Aeetes",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 271,
+        "mobName": "Golden Fleece",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5321": [
+      {
+        "bNpcNameId": 790,
+        "mobName": "Hippocerf",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1657,
+        "mobName": "Recluse Hippogryph",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1688,
+        "mobName": "Recluse Hippogryph",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1444,
+        "mobName": "Gwyllgi",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 789,
+        "mobName": "Hippogryph",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2276,
+        "mobName": "Pit Hippogryph",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5355": [
+      {
+        "bNpcNameId": 393,
+        "mobName": "Wild Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 859,
+        "mobName": "Gluttonous Gertrude",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 394,
+        "mobName": "Fat Dodo",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5436": [
+      {
+        "bNpcNameId": 879,
+        "mobName": "Elder Longhorn",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 274,
+        "mobName": "Myotragus Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 273,
+        "mobName": "Myotragus Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2050,
+        "mobName": "Mourning Nanny",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2049,
+        "mobName": "Mourning Billy",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 881,
+        "mobName": "Longhorn Nannygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 880,
+        "mobName": "Longhorn Billygoat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5435": [
+      {
+        "bNpcNameId": 4,
+        "mobName": "Antelope Stag",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5434": [
+      {
+        "bNpcNameId": 392,
+        "mobName": "Lost Lamb",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5439": [
+      {
+        "bNpcNameId": 2017,
+        "mobName": "Bolthorn",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2339,
+        "mobName": "Manor Warden",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2061,
+        "mobName": "Elder Hapalit",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2874,
+        "mobName": "Scabrous Hapalit",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 793,
+        "mobName": "Hapalit",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1442,
+        "mobName": "Porus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3031,
+        "mobName": "Hrimthurs",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5444": [
+      {
+        "bNpcNameId": 2585,
+        "mobName": "Pit Wolf",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 174,
+        "mobName": "Watchwolf",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 653,
+        "mobName": "Snow Wolf",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 659,
+        "mobName": "Snow Wolf Pup",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1846,
+        "mobName": "Natalan Watchwolf",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 431,
+        "mobName": "Attack Hound",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3219,
+        "mobName": "Snowcloak Wolf",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2113,
+        "mobName": "Imperial War Hound",
+        "territoryId": 505,
+        "zoneName": "The Gordian Knot",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1180,
+        "mobName": "Wild Wolf",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 399,
+        "mobName": "Wild Jackal",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5446": [
+      {
+        "bNpcNameId": 353,
+        "mobName": "Goobbue",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2002,
+        "mobName": "Shezmu",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 4114,
+        "mobName": "Jungle Goobbue",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1516,
+        "mobName": "Jolly Green",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 687,
+        "mobName": "Hoary Goobbue",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 355,
+        "mobName": "Mildewed Goobbue",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 354,
+        "mobName": "Mossless Goobbue",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1611,
+        "mobName": "Snowstorm Goobbue",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1612,
+        "mobName": "Highland Goobbue",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3030,
+        "mobName": "Snowcloak Goobbue",
+        "territoryId": 446,
+        "zoneName": "Thok ast Thok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1986,
+        "mobName": "Goobbue Farmer",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5455": [
+      {
+        "bNpcNameId": 869,
+        "mobName": "Daddy Longlegs",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 381,
+        "mobName": "Forest Yarzon",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 226,
+        "mobName": "River Yarzon",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5456": [
+      {
+        "bNpcNameId": 850,
+        "mobName": "Shearing Sheridan",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 561,
+        "mobName": "Megalocrab",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3007,
+        "mobName": "Beryl Crab",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 860,
+        "mobName": "Old Six-arms",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5432": [
+      {
+        "bNpcNameId": 110,
+        "mobName": "Skeleton Soldier",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 110,
+        "mobName": "Skeleton Soldier",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1449,
+        "mobName": "Hellsbound Warrior",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2333,
+        "mobName": "Manor Footman",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 434,
+        "mobName": "Manor Servitor",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 427,
+        "mobName": "Manor Steward",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 20,
+        "mobName": "Magicked Bones",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1565,
+        "mobName": "Soldier Of Nym",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1854,
+        "mobName": "Dead Man's Moan",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1576,
+        "mobName": "The Accused",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5457": [
+      {
+        "bNpcNameId": 1200,
+        "mobName": "Cancer",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1995,
+        "mobName": "Gripper",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 560,
+        "mobName": "Snipper",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3008,
+        "mobName": "Cave Crab",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5458": [
+      {
+        "bNpcNameId": 243,
+        "mobName": "Iron Tortoise",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1505,
+        "mobName": "Aspidochelone",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2511,
+        "mobName": "Bronze Tortoise",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2360,
+        "mobName": "Lacovie",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5468": [
+      {
+        "bNpcNameId": 1987,
+        "mobName": "Sabotender Del Sol",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 286,
+        "mobName": "Sabotender",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1594,
+        "mobName": "Sabotender Desertor",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5447": [
+      {
+        "bNpcNameId": 885,
+        "mobName": "Ulhuadshi",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 290,
+        "mobName": "Sandworm",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2010,
+        "mobName": "Giant Sandworm",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1978,
+        "mobName": "Wellwick Worm",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5454": [
+      {
+        "bNpcNameId": 227,
+        "mobName": "Yarzon Scavenger",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 284,
+        "mobName": "Yarzon Feeder",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 285,
+        "mobName": "Russet Yarzon",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1578,
+        "mobName": "Wall Crawler",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5442": [
+      {
+        "bNpcNameId": 279,
+        "mobName": "Sun Bat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2584,
+        "mobName": "Halatali Bat",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 112,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 171,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 430,
+        "mobName": "Attic Bat",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1539,
+        "mobName": "Vale Bat",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 364,
+        "mobName": "Cave Bat",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 612,
+        "mobName": "Blood Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1592,
+        "mobName": "Sand Bat",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3342,
+        "mobName": "Snakemolt Bat",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 363,
+        "mobName": "Dusk Bat",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1574,
+        "mobName": "Temple Bat",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3053,
+        "mobName": "Temple Fox",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5492": [
+      {
+        "bNpcNameId": 396,
+        "mobName": "Dung Midge Swarm",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 279,
+        "mobName": "Sun Bat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1199,
+        "mobName": "Blowfly Swarm",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 696,
+        "mobName": "Hornet Cloud",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 298,
+        "mobName": "Sun Midge Swarm",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 201,
+        "mobName": "Syrphid Cloud",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2584,
+        "mobName": "Halatali Bat",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 118,
+        "mobName": "Midge Swarm",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 146,
+        "mobName": "Fleshfly Swarm",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 430,
+        "mobName": "Attic Bat",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 435,
+        "mobName": "Corpsefly",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1539,
+        "mobName": "Vale Bat",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 364,
+        "mobName": "Cave Bat",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 41,
+        "mobName": "Syrphid Swarm",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 43,
+        "mobName": "Chigoe",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 612,
+        "mobName": "Blood Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1994,
+        "mobName": "Boring Fleshfly Swarm",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1592,
+        "mobName": "Sand Bat",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2058,
+        "mobName": "Agaric Fly Swarm",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 43,
+        "mobName": "Chigoe",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 681,
+        "mobName": "Even Bigger Chigoe",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 168,
+        "mobName": "Hoverfly Swarm",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 680,
+        "mobName": "Bigger Chigoe",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 363,
+        "mobName": "Dusk Bat",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1574,
+        "mobName": "Temple Bat",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3053,
+        "mobName": "Temple Fox",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5496": [
+      {
+        "bNpcNameId": 40,
+        "mobName": "Shroud Hare",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2575,
+        "mobName": "Ruins Dross",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1479,
+        "mobName": "Dark Matter Slug",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2998,
+        "mobName": "Spelaean Slug",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5493": [
+      {
+        "bNpcNameId": 151,
+        "mobName": "Tainted Louse",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2187,
+        "mobName": "Swollen Djigga",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 44,
+        "mobName": "Jumping Djigga",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 587,
+        "mobName": "Buzzing Djigga",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5495": [
+      {
+        "bNpcNameId": 962,
+        "mobName": "Shore Slug",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 432,
+        "mobName": "Carpet Stain",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 39,
+        "mobName": "Tree Slug",
+        "territoryId": 1038,
+        "zoneName": "Copperbell Mines",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 188,
+        "mobName": "Saprophagous Slug",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 448,
+        "mobName": "Lou Carcolh",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1561,
+        "mobName": "Gear Grease",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1560,
+        "mobName": "Cog Oil",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5497": [
+      {
+        "bNpcNameId": 293,
+        "mobName": "Antling Sentry",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 292,
+        "mobName": "Antling Soldier",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 875,
+        "mobName": "Nest Commander",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1591,
+        "mobName": "Myrmidon Sentry",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5494": [
+      {
+        "bNpcNameId": 112,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 171,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3342,
+        "mobName": "Snakemolt Bat",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5499": [
+      {
+        "bNpcNameId": 1669,
+        "mobName": "Great Oak",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 25,
+        "mobName": "Dryad",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 233,
+        "mobName": "Old-growth Treant",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 163,
+        "mobName": "Sylphlands Sentinel",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2876,
+        "mobName": "Giant Treant",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 232,
+        "mobName": "Diseased Treant",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3343,
+        "mobName": "Snakemolt Treant",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 24,
+        "mobName": "Treant",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5533": [
+      {
+        "bNpcNameId": 1823,
+        "mobName": "2nd Cohort Eques",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1825,
+        "mobName": "2nd Cohort Signifer",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1824,
+        "mobName": "2nd Cohort Secutor",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1821,
+        "mobName": "2nd Cohort Hoplomachus",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1822,
+        "mobName": "2nd Cohort Laquearius",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1817,
+        "mobName": "4th Cohort Eques",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1819,
+        "mobName": "4th Cohort Signifer",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1818,
+        "mobName": "4th Cohort Secutor",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1815,
+        "mobName": "4th Cohort Hoplomachus",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1816,
+        "mobName": "4th Cohort Laquearius",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 59,
+        "mobName": "3rd Cohort Eques",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 61,
+        "mobName": "3rd Cohort Signifer",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 60,
+        "mobName": "3rd Cohort Secutor",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 58,
+        "mobName": "3rd Cohort Laquearius",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3177,
+        "mobName": "6th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3180,
+        "mobName": "6th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3178,
+        "mobName": "6th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3176,
+        "mobName": "6th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3181,
+        "mobName": "6th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2983,
+        "mobName": "5th Cohort Evocatus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1811,
+        "mobName": "5th Cohort Eques",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1813,
+        "mobName": "5th Cohort Signifer",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1812,
+        "mobName": "5th Cohort Secutor",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1809,
+        "mobName": "5th Cohort Hoplomachus",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1810,
+        "mobName": "5th Cohort Laquearius",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1663,
+        "mobName": "Aulus Rem Vulso",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2351,
+        "mobName": "Imperial Engineer",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 57,
+        "mobName": "3rd Cohort Decurion",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2120,
+        "mobName": "7th Cohort Eques",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3334,
+        "mobName": "7th Cohort Signifer",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3110,
+        "mobName": "7th Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 53,
+        "mobName": "3rd Cohort Hoplomachus",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5528": [
+      {
+        "bNpcNameId": 270,
+        "mobName": "Grenade",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1193,
+        "mobName": "Gas Bomb",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 17,
+        "mobName": "Balloon",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2189,
+        "mobName": "Bright Balloon",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 425,
+        "mobName": "Lady's Candle",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2743,
+        "mobName": "Smart Bomb",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2707,
+        "mobName": "Glowing Bomb",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2688,
+        "mobName": "Breeding Bomb",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2745,
+        "mobName": "Limpet Bomb",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2280,
+        "mobName": "Fulminator",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 132,
+        "mobName": "Smoke Bomb",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5526": [
+      {
+        "bNpcNameId": 270,
+        "mobName": "Grenade",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1799,
+        "mobName": "Shrapnel",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 270,
+        "mobName": "Grenade",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1511,
+        "mobName": "Bomb Baron",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5549": [
+      {
+        "bNpcNameId": 155,
+        "mobName": "Mitetrap",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1542,
+        "mobName": "Lily Of The Vale",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 162,
+        "mobName": "Milkroot Sapling",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 23,
+        "mobName": "Kedtrap",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3341,
+        "mobName": "Violet Flytrap",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5554": [
+      {
+        "bNpcNameId": 5,
+        "mobName": "Opo-opo",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1538,
+        "mobName": "Goldvine",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1532,
+        "mobName": "Miser's Mistress",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2007,
+        "mobName": "Morbolger",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1610,
+        "mobName": "Voluptuous Vivian",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2871,
+        "mobName": "Malodorous Morbol",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2055,
+        "mobName": "Wild Morbol",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1329,
+        "mobName": "Jaded Jody",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2057,
+        "mobName": "Halitostroper",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1662,
+        "mobName": "Capricious Cassie",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 238,
+        "mobName": "Stroper",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 237,
+        "mobName": "Morbol",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5551": [
+      {
+        "bNpcNameId": 279,
+        "mobName": "Sun Bat",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2584,
+        "mobName": "Halatali Bat",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 112,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 171,
+        "mobName": "Lesser Kalong",
+        "territoryId": 241,
+        "zoneName": "Upper Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 430,
+        "mobName": "Attic Bat",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1539,
+        "mobName": "Vale Bat",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 364,
+        "mobName": "Cave Bat",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 612,
+        "mobName": "Blood Bat",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1592,
+        "mobName": "Sand Bat",
+        "territoryId": 1043,
+        "zoneName": "Castrum Meridianum",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3342,
+        "mobName": "Snakemolt Bat",
+        "territoryId": 1044,
+        "zoneName": "The Praetorium",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 38,
+        "mobName": "Black Bat",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 363,
+        "mobName": "Dusk Bat",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1574,
+        "mobName": "Temple Bat",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3053,
+        "mobName": "Temple Fox",
+        "territoryId": 1330,
+        "zoneName": "Dzemael Darkhold",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5556": [
+      {
+        "bNpcNameId": 2024,
+        "mobName": "Aetherbound Aurelia",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 361,
+        "mobName": "Bloodshore Bell",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1540,
+        "mobName": "Vale Wasp",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1481,
+        "mobName": "Dark Matter Aurelia",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1210,
+        "mobName": "Cave Aurelia",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 360,
+        "mobName": "Sea Wasp",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5557": [
+      {
+        "bNpcNameId": 2024,
+        "mobName": "Aetherbound Aurelia",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 361,
+        "mobName": "Bloodshore Bell",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1540,
+        "mobName": "Vale Wasp",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1481,
+        "mobName": "Dark Matter Aurelia",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1210,
+        "mobName": "Cave Aurelia",
+        "territoryId": 1045,
+        "zoneName": "Bowl of Embers",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 360,
+        "mobName": "Sea Wasp",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5558": [
+      {
+        "bNpcNameId": 2337,
+        "mobName": "Congealed Blood",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2253,
+        "mobName": "Corrupted Pudding",
+        "territoryId": 420,
+        "zoneName": "Neverreap",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3090,
+        "mobName": "Bavaroid Waste",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5553": [
+      {
+        "bNpcNameId": 2583,
+        "mobName": "Dirty Eye",
+        "territoryId": 346,
+        "zoneName": "Private House - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1686,
+        "mobName": "Smolenkos",
+        "territoryId": 347,
+        "zoneName": "Private Mansion - The Goblet",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1508,
+        "mobName": "Arimaspi",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 242,
+        "mobName": "Ahriman",
+        "territoryId": 1245,
+        "zoneName": "Halatali",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5552": [
+      {
+        "bNpcNameId": 1198,
+        "mobName": "Vandalous Imp",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 692,
+        "mobName": "Brutish Imp",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1213,
+        "mobName": "Mormo's Missionary",
+        "territoryId": 163,
+        "zoneName": "The Sunken Temple of Qarn",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1354,
+        "mobName": "Heckler Imp",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 109,
+        "mobName": "Gravedigger",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 456,
+        "mobName": "Inconspicuous Imp",
+        "territoryId": 242,
+        "zoneName": "Lower Aetheroacoustic Exploratory Site",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2370,
+        "mobName": "Manor Acrobat",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 426,
+        "mobName": "Manor Jester",
+        "territoryId": 244,
+        "zoneName": "Ragnarok Drive Cylinder",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 512,
+        "mobName": "Alux",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 21,
+        "mobName": "Trickster Imp",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2039,
+        "mobName": "Deepvoid Scamp",
+        "territoryId": 1041,
+        "zoneName": "Brayflox's Longstop",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5555": [
+      {
+        "bNpcNameId": 1534,
+        "mobName": "Locksmith",
+        "territoryId": 357,
+        "zoneName": "Central Decks",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 33,
+        "mobName": "Ochu",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 165,
+        "mobName": "Milkroot Cluster",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1288,
+        "mobName": "Raveled Raincatcher",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5548": [
+      {
+        "bNpcNameId": 154,
+        "mobName": "Mun-Tuy Sapling",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 573,
+        "mobName": "Sweet Trap",
+        "territoryId": 1036,
+        "zoneName": "Sastasha",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 447,
+        "mobName": "Matagaigai",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 22,
+        "mobName": "Roselet",
+        "territoryId": 1040,
+        "zoneName": "Haukke Manor",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 400,
+        "mobName": "Roseling",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5550": [
+      {
+        "bNpcNameId": 401,
+        "mobName": "Puk Hatchling",
+        "territoryId": 180,
+        "zoneName": "Outer La Noscea",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2029,
+        "mobName": "Pteroc Matron",
+        "territoryId": 243,
+        "zoneName": "The Ragnarok",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 153,
+        "mobName": "Prison Pteroc",
+        "territoryId": 247,
+        "zoneName": "Ragnarok Main Bridge",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 62,
+        "mobName": "Pteroc",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1526,
+        "mobName": "Peryton",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1463,
+        "mobName": "Dark Matter Pteroc",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 3080,
+        "mobName": "Pteroc Pointer",
+        "territoryId": 1042,
+        "zoneName": "Stone Vigil",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 402,
+        "mobName": "Puk Hatchling",
+        "territoryId": 1046,
+        "zoneName": "The Navel",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "5998": [
+      {
+        "bNpcNameId": 2754,
+        "mobName": "Champion Archer",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2753,
+        "mobName": "Champion Conjurer",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2596,
+        "mobName": "Champion Marauder",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2594,
+        "mobName": "Champion Gladiator",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2595,
+        "mobName": "Champion Lancer",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6149": [
+      {
+        "bNpcNameId": 1608,
+        "mobName": "Butting Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1313,
+        "mobName": "Large Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 894,
+        "mobName": "Rutting Buffalo",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6150": [
+      {
+        "bNpcNameId": 352,
+        "mobName": "Jungle Coeurl",
+        "territoryId": 159,
+        "zoneName": "The Wanderer's Palace",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2592,
+        "mobName": "Pit Coeurl",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2750,
+        "mobName": "Pit Coeurl Pup",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2751,
+        "mobName": "Pit Torama",
+        "territoryId": 167,
+        "zoneName": "Amdapor Keep",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 106,
+        "mobName": "Coeurl",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2192,
+        "mobName": "Young Coeurl",
+        "territoryId": 617,
+        "zoneName": "Sohm Al (Hard)",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1462,
+        "mobName": "Dark Matter Coeurl",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 1297,
+        "mobName": "Deep Jungle Coeurl",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      },
+      {
+        "bNpcNameId": 2658,
+        "mobName": "Deep Jungle Torama",
+        "territoryId": 1067,
+        "zoneName": "Thornmarch",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6160": [
+      {
+        "bNpcNameId": 1644,
+        "mobName": "Garuda",
+        "territoryId": 662,
+        "zoneName": "Kugane Castle",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6158": [
+      {
+        "bNpcNameId": 1185,
+        "mobName": "Ifrit",
+        "territoryId": 633,
+        "zoneName": "Carteneau Flats: Borderland Ruins",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6162": [
+      {
+        "bNpcNameId": 1801,
+        "mobName": "Titan",
+        "territoryId": 1142,
+        "zoneName": "The Sirensong Sea",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6219": [
+      {
+        "bNpcNameId": 1459,
+        "mobName": "ADS",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6218": [
+      {
+        "bNpcNameId": 1466,
+        "mobName": "Caduceus",
+        "territoryId": 768,
+        "zoneName": "The Swallow's Compass",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "6220": [
+      {
+        "bNpcNameId": 1482,
+        "mobName": "Twintania",
+        "territoryId": 761,
+        "zoneName": "The Great Hunt",
+        "positions": [],
+        "dropRate": 1.0
+      }
+    ],
+    "7007": [
+      {
+        "bNpcNameId": 725,
+        "mobName": "Good King Moggle Mog XII",
+        "territoryId": 662,
+        "zoneName": "Kugane Castle",
+        "positions": [],
+        "dropRate": 1.0
       }
     ]
   }

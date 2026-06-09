@@ -17,34 +17,38 @@ import json
 import time
 import argparse
 import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from threading import Lock
 
 GARLAND_URL   = "https://www.garlandtools.org/db/doc/item/en/3/{}.json"
-TERRITORY_URL = "https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/TerritoryType.csv"
-PLACE_URL     = "https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/PlaceName.csv"
+MAP_URL   = "https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/en/Map.csv"
+PLACE_URL = "https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/en/PlaceName.csv"
 
-BNPC_MOD  = 10_000_000_000   # garlandId % BNPC_MOD = bNpcNameId
-CACHE_DIR = Path("cache")
+BNPC_MOD      = 10_000_000_000
+CACHE_DIR     = Path("cache")
 DEFAULT_RANGE = (1, 15_000)
-REQUEST_DELAY = 0.15          # secondes entre deux requêtes réseau
+WORKERS       = 20             # requêtes parallèles
+_print_lock   = Lock()
 
 
 # ─── Data helpers ─────────────────────────────────────────────────────────────
 
 def load_csv_index(url: str, key_col: int, val_col: int) -> dict[int, str]:
-    """Télécharge un CSV ffxiv-datamining et retourne {rowId: valeur}."""
+    """Télécharge un CSV ffxiv-datamining (en/) et retourne {rowId: valeur}.
+    Format : ligne 0 = header, ligne 1+ = données.
+    """
     print(f"Téléchargement {url.split('/')[-1]}...")
     r = requests.get(url, timeout=30)
     r.raise_for_status()
     lines = r.text.splitlines()
-    # Ligne 0 : numéros de colonnes  |  Ligne 1 : noms  |  Ligne 2 : types  |  Ligne 3+ : données
     result: dict[int, str] = {}
-    for line in lines[3:]:
+    for line in lines[1:]:           # skip header
         parts = line.split(",")
         try:
             row_id = int(parts[key_col])
             value  = parts[val_col].strip().strip('"')
-            if row_id > 0 and value:
+            if value:
                 result[row_id] = value
         except (ValueError, IndexError):
             continue
@@ -52,60 +56,71 @@ def load_csv_index(url: str, key_col: int, val_col: int) -> dict[int, str]:
     return result
 
 
-def load_territory_names() -> dict[int, str]:
+class ZoneInfo:
+    __slots__ = ("territory_id", "name")
+    def __init__(self, territory_id: int, name: str):
+        self.territory_id = territory_id
+        self.name = name
+
+
+def load_zone_map() -> dict[int, ZoneInfo]:
     """
-    TerritoryType.csv : colonne 0 = RowId, colonne 6 = PlaceName (ref row ID).
-    PlaceName.csv     : colonne 0 = RowId, colonne 1 = Name.
-    On résout la référence pour avoir des noms lisibles.
+    Garland Tools utilise les Map IDs (Map.csv col 0) comme identifiants de zone.
+    Map.csv :     col 0 = Map ID (= z dans Garland)
+                  col 6 = PlaceName ref
+                  col 8 = TerritoryType ID (celui utilisé par Dalamud)
+    PlaceName.csv : col 0 = ID, col 1 = Name.
+    Retourne : { garlandZoneId → ZoneInfo(territory_id, name) }
     """
     place_names = load_csv_index(PLACE_URL, 0, 1)
 
-    print(f"Téléchargement TerritoryType.csv...")
-    r = requests.get(TERRITORY_URL, timeout=30)
+    print("Téléchargement Map.csv...")
+    r = requests.get(MAP_URL, timeout=30)
     r.raise_for_status()
     lines = r.text.splitlines()
 
-    territories: dict[int, str] = {}
-    for line in lines[3:]:
+    zones: dict[int, ZoneInfo] = {}
+    for line in lines[1:]:
         parts = line.split(",")
         try:
-            territory_id   = int(parts[0])
-            place_name_ref = int(parts[6])         # référence vers PlaceName
+            map_id         = int(parts[0])
+            place_name_ref = int(parts[6])
+            territory_id   = int(parts[8])
             name = place_names.get(place_name_ref, "")
-            if territory_id > 0 and name:
-                territories[territory_id] = name
+            if map_id > 0 and territory_id > 0 and name:
+                zones[map_id] = ZoneInfo(territory_id, name)
         except (ValueError, IndexError):
             continue
 
-    print(f"  {len(territories)} territoires résolus.")
-    return territories
+    print(f"  {len(zones)} zones résolues.")
+    return zones
 
 
 # ─── Garland Tools ────────────────────────────────────────────────────────────
 
-def fetch_item(item_id: int) -> dict | None:
+def fetch_item(item_id: int) -> tuple[int, dict | None]:
     cache_path = CACHE_DIR / f"{item_id}.json"
 
     if cache_path.exists():
         raw = cache_path.read_text(encoding="utf-8")
-        return json.loads(raw) if raw != "{}" else None
+        return item_id, (json.loads(raw) if raw != "{}" else None)
 
     try:
         r = requests.get(GARLAND_URL.format(item_id), timeout=15)
         if r.status_code == 404:
             cache_path.write_text("{}")
-            return None
+            return item_id, None
         r.raise_for_status()
         data = r.json()
         cache_path.write_text(json.dumps(data, ensure_ascii=False))
-        time.sleep(REQUEST_DELAY)
-        return data
+        return item_id, data
     except Exception as e:
-        print(f"  [!] Item {item_id} : {e}")
-        return None
+        with _print_lock:
+            print(f"  [!] Item {item_id} : {e}")
+        return item_id, None
 
 
-def extract_sources(data: dict, territories: dict[int, str]) -> list[dict]:
+def extract_sources(data: dict, zones: dict[int, ZoneInfo]) -> list[dict]:
     item     = data.get("item", {})
     mob_ids  = item.get("drops", [])
     if not mob_ids:
@@ -127,18 +142,22 @@ def extract_sources(data: dict, territories: dict[int, str]) -> list[dict]:
             continue
 
         bnpc_name_id = int(garland_id) % BNPC_MOD
-        territory_id = int(mob.get("z", 0))
-        key = (bnpc_name_id, territory_id)
+        garland_zone = int(mob.get("z", 0))
+        zone_info    = zones.get(garland_zone)
 
-        if key in seen or bnpc_name_id == 0 or territory_id == 0:
+        if bnpc_name_id == 0 or garland_zone == 0 or zone_info is None:
+            continue
+
+        key = (bnpc_name_id, zone_info.territory_id)
+        if key in seen:
             continue
         seen.add(key)
 
         sources.append({
             "bNpcNameId":  bnpc_name_id,
             "mobName":     mob.get("n", "Unknown"),
-            "territoryId": territory_id,
-            "zoneName":    territories.get(territory_id, f"Zone {territory_id}"),
+            "territoryId": zone_info.territory_id,
+            "zoneName":    zone_info.name,
             "positions":   [],   # Garland Tools ne fournit pas de coordonnées de spawn
             "dropRate":    1.0
         })
@@ -153,11 +172,12 @@ def main():
     parser.add_argument("--ids",   nargs="+", type=int,  help="Item IDs spécifiques")
     parser.add_argument("--range", nargs=2,   type=int,  metavar=("START", "END"),
                         help="Plage d'IDs (défaut: 1 15000)")
-    parser.add_argument("--out",   default="../Data/drops.json", help="Fichier de sortie")
+    parser.add_argument("--out",     default="../Data/drops.json", help="Fichier de sortie")
+    parser.add_argument("--workers", type=int, default=WORKERS,   help="Requêtes parallèles")
     args = parser.parse_args()
 
     CACHE_DIR.mkdir(exist_ok=True)
-    territories = load_territory_names()
+    zones = load_zone_map()
 
     if args.ids:
         item_ids = args.ids
@@ -166,24 +186,36 @@ def main():
     else:
         item_ids = list(range(*DEFAULT_RANGE))
 
-    print(f"\nTraitement de {len(item_ids)} items...\n")
-
-    drops : dict[str, list] = {}
     total = len(item_ids)
+    print(f"\nTraitement de {total} items avec {args.workers} workers parallèles...\n")
 
-    for i, item_id in enumerate(item_ids):
-        if i % 500 == 0:
-            print(f"  [{i:>6}/{total}]  {len(drops)} items avec drops trouvés")
-
-        data = fetch_item(item_id)
-        if not data:
-            continue
-
-        sources = extract_sources(data, territories)
-        if sources:
-            drops[str(item_id)] = sources
-
+    # Charger les drops existants pour merger (évite d'écraser en cas de run partiel)
     out_path = Path(args.out)
+    drops: dict[str, list] = {}
+    if out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+            drops = existing.get("drops", {})
+            if drops:
+                print(f"  Merge avec {len(drops)} items existants dans {out_path}\n")
+        except Exception:
+            pass
+
+    done = 0
+
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = {pool.submit(fetch_item, iid): iid for iid in item_ids}
+        for future in as_completed(futures):
+            item_id, data = future.result()
+            done += 1
+            if done % 500 == 0:
+                print(f"  [{done:>6}/{total}]  {len(drops)} items avec drops")
+            if not data:
+                continue
+            sources = extract_sources(data, zones)
+            if sources:
+                drops[str(item_id)] = sources
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     output = {
