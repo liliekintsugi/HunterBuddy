@@ -12,6 +12,7 @@ public class Configuration : IPluginConfiguration
     public bool UseRotationSolver { get; set; } = true;
     public int LootWaitMs { get; set; } = 2000;
     public int MobSearchTimeoutSec { get; set; } = 15;
+    public int SelectedGearSetId { get; set; } = -1; // -1 = ne pas changer de classe
 
     public void Save() => Plugin.PluginInterface.SavePluginConfig(this);
 }

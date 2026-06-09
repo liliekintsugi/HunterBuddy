@@ -11,6 +11,7 @@ public enum HuntState
 {
     Idle,
     SelectingTarget,
+    SwitchingJob,
     WaitingForZone,
     NavigatingToSpawn,
     SearchingMob,
@@ -32,6 +33,7 @@ public class HuntService : IDisposable
     private DropSource? _currentSource;
     private SpawnPosition? _currentSpawn;
     private DateTime _lastStateChange = DateTime.MinValue;
+    private uint _targetJobId;
 
     private readonly VNavmeshIpc _vnavmesh;
     private readonly RotationSolverIpc _rotationSolver;
@@ -68,6 +70,7 @@ public class HuntService : IDisposable
             switch (State)
             {
                 case HuntState.SelectingTarget:    TickSelectTarget();    break;
+                case HuntState.SwitchingJob:       TickSwitchingJob();    break;
                 case HuntState.WaitingForZone:     TickWaitingForZone();  break;
                 case HuntState.NavigatingToSpawn:  TickNavigating();      break;
                 case HuntState.SearchingMob:       TickSearchMob();       break;
@@ -113,6 +116,19 @@ public class HuntService : IDisposable
             .First();
         _currentSpawn = _currentSource.Positions.FirstOrDefault();
 
+        // Changement de classe si configuré
+        if (Plugin.Config.SelectedGearSetId >= 0)
+        {
+            _targetJobId = GetGearSetJobId(Plugin.Config.SelectedGearSetId);
+            var currentJobId = Plugin.ObjectTable.LocalPlayer?.ClassJob.RowId ?? 0;
+            if (_targetJobId > 0 && currentJobId != _targetJobId)
+            {
+                Plugin.CommandManager.ProcessCommand($"/gearset change {Plugin.Config.SelectedGearSetId + 1}");
+                SetState(HuntState.SwitchingJob, "Changement de classe...");
+                return;
+            }
+        }
+
         // Si le joueur n'est pas dans la bonne zone, on attend
         if (_currentSource.TerritoryId > 0 && currentTerritory != _currentSource.TerritoryId)
         {
@@ -127,6 +143,18 @@ public class HuntService : IDisposable
         }
 
         SetState(HuntState.NavigatingToSpawn, $"Navigation vers {_currentSource.MobName} ({_currentSource.ZoneName})...");
+    }
+
+    private void TickSwitchingJob()
+    {
+        var currentJobId = Plugin.ObjectTable.LocalPlayer?.ClassJob.RowId ?? 0;
+        if (currentJobId == _targetJobId)
+        {
+            SetState(HuntState.SelectingTarget, "Classe prête, sélection de la cible...");
+            return;
+        }
+        if (TimeSinceState() > TimeSpan.FromSeconds(10))
+            SetState(HuntState.Error, "Timeout changement de classe.");
     }
 
     private void TickWaitingForZone()
@@ -296,6 +324,15 @@ public class HuntService : IDisposable
     {
         var mgr = InventoryManager.Instance();
         return mgr != null ? (int)mgr->GetInventoryItemCount(itemId) : 0;
+    }
+
+    private static unsafe uint GetGearSetJobId(int gearSetIndex)
+    {
+        var gsm = FFXIVClientStructs.FFXIV.Client.UI.Misc.RaptureGearsetModule.Instance();
+        if (gsm == null) return 0;
+        var entry = gsm->GetGearset(gearSetIndex);
+        if (entry == null) return 0;
+        return entry->ClassJob;
     }
 
     private static float Dist2D(float x1, float z1, float x2, float z2)

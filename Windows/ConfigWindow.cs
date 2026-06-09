@@ -1,5 +1,7 @@
-using Dalamud.Interface.Windowing;
 using Dalamud.Bindings.ImGui;
+using Dalamud.Interface.Windowing;
+using FFXIVClientStructs.FFXIV.Client.UI.Misc;
+using Lumina.Excel.Sheets;
 using System.Numerics;
 
 namespace HunterBuddy.Windows;
@@ -10,8 +12,8 @@ public class ConfigWindow : Window
     {
         SizeConstraints = new WindowSizeConstraints
         {
-            MinimumSize = new Vector2(320, 240),
-            MaximumSize = new Vector2(520, 420)
+            MinimumSize = new Vector2(360, 280),
+            MaximumSize = new Vector2(560, 480)
         };
     }
 
@@ -20,6 +22,15 @@ public class ConfigWindow : Window
         var cfg     = Plugin.Config;
         var changed = false;
 
+        // ── Classe ────────────────────────────────────────────────────────────
+        ImGui.TextUnformatted("Classe");
+        ImGui.Separator();
+        changed |= DrawJobPicker(cfg);
+        ImGui.TextDisabled("  Changement automatique au démarrage du farm.");
+
+        ImGui.Spacing();
+
+        // ── Navigation ────────────────────────────────────────────────────────
         ImGui.TextUnformatted("Navigation");
         ImGui.Separator();
 
@@ -34,6 +45,8 @@ public class ConfigWindow : Window
         { cfg.MobSearchTimeoutSec = timeout; changed = true; }
 
         ImGui.Spacing();
+
+        // ── Combat ────────────────────────────────────────────────────────────
         ImGui.TextUnformatted("Combat");
         ImGui.Separator();
 
@@ -48,5 +61,52 @@ public class ConfigWindow : Window
         { cfg.LootWaitMs = loot; changed = true; }
 
         if (changed) cfg.Save();
+    }
+
+    private static unsafe bool DrawJobPicker(Configuration cfg)
+    {
+        var gsm = RaptureGearsetModule.Instance();
+        if (gsm == null)
+        {
+            ImGui.TextDisabled("Gear sets indisponibles.");
+            return false;
+        }
+
+        var sheet = Plugin.DataManager.GetExcelSheet<ClassJob>();
+
+        // Construire la liste : (-1, "Aucun") + gear sets dispo
+        var ids    = new List<int>   { -1 };
+        var labels = new List<string>{ "Aucun (ne pas changer)" };
+
+        for (var i = 0; i < 100; i++)
+        {
+            var entry = gsm->GetGearset(i);
+            if (entry == null || !entry->Flags.HasFlag(RaptureGearsetModule.GearsetFlag.Exists))
+                continue;
+            var abbr = sheet?.GetRow(entry->ClassJob)?.Abbreviation.ExtractText() ?? $"Job{entry->ClassJob}";
+            ids.Add(i);
+            labels.Add($"[{i + 1}] {abbr}");
+        }
+
+        var currentIdx = ids.IndexOf(cfg.SelectedGearSetId);
+        if (currentIdx < 0) currentIdx = 0;
+
+        ImGui.SetNextItemWidth(220);
+        var changed = false;
+        if (ImGui.BeginCombo("Classe##jobpicker", labels[currentIdx]))
+        {
+            for (var i = 0; i < labels.Count; i++)
+            {
+                var selected = i == currentIdx;
+                if (ImGui.Selectable(labels[i], selected))
+                {
+                    cfg.SelectedGearSetId = ids[i];
+                    changed = true;
+                }
+                if (selected) ImGui.SetItemDefaultFocus();
+            }
+            ImGui.EndCombo();
+        }
+        return changed;
     }
 }
