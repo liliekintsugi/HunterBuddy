@@ -179,11 +179,11 @@ public class MainWindow : Window
         if (sheet == null) return;
 
         _searchResults = sheet
-            .Where(i => i.Name.ToString().Contains(_searchQuery, StringComparison.OrdinalIgnoreCase)
+            .Where(i => i.Name.ExtractText().Contains(_searchQuery, StringComparison.OrdinalIgnoreCase)
                      && Plugin.DropResolver.HasSources(i.RowId))
-            .OrderBy(i => i.Name.ToString())
+            .OrderBy(i => i.Name.ExtractText())
             .Take(20)
-            .Select(i => (i.RowId, i.Name.ToString()))
+            .Select(i => (i.RowId, i.Name.ExtractText()))
             .ToList();
 
         _selectedResult = -1;

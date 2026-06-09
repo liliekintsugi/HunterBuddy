@@ -11,6 +11,7 @@ public enum HuntState
 {
     Idle,
     SelectingTarget,
+    WaitingForZone,
     NavigatingToSpawn,
     SearchingMob,
     Engaging,
@@ -67,6 +68,7 @@ public class HuntService : IDisposable
             switch (State)
             {
                 case HuntState.SelectingTarget:    TickSelectTarget();    break;
+                case HuntState.WaitingForZone:     TickWaitingForZone();  break;
                 case HuntState.NavigatingToSpawn:  TickNavigating();      break;
                 case HuntState.SearchingMob:       TickSearchMob();       break;
                 case HuntState.Engaging:           TickEngaging();        break;
@@ -103,19 +105,48 @@ public class HuntService : IDisposable
         }
 
         _currentTarget = target;
-        // Priorité aux sources avec le meilleur taux de drop
-        _currentSource = sources.OrderByDescending(s => s.DropRate).First();
-        _currentSpawn  = _currentSource.Positions.FirstOrDefault();
+        // Priorité aux sources avec le meilleur taux de drop, dans la zone courante si possible
+        var currentTerritory = Plugin.ClientState.TerritoryType;
+        _currentSource = sources
+            .OrderByDescending(s => s.TerritoryId == currentTerritory ? 1 : 0)
+            .ThenByDescending(s => s.DropRate)
+            .First();
+        _currentSpawn = _currentSource.Positions.FirstOrDefault();
 
-        // Pas de position connue : on scanne directement la zone sans navigation fixe
+        // Si le joueur n'est pas dans la bonne zone, on attend
+        if (_currentSource.TerritoryId > 0 && currentTerritory != _currentSource.TerritoryId)
+        {
+            SetState(HuntState.WaitingForZone, $"Téléportez-vous vers : {_currentSource.ZoneName}");
+            return;
+        }
+
         if (_currentSpawn == null)
         {
-            SetState(HuntState.SearchingMob,
-                $"Scan zone pour {_currentSource.MobName} ({_currentSource.ZoneName}) — naviguez vers la zone si besoin.");
+            SetState(HuntState.SearchingMob, $"Scan de la zone pour {_currentSource.MobName}...");
             return;
         }
 
         SetState(HuntState.NavigatingToSpawn, $"Navigation vers {_currentSource.MobName} ({_currentSource.ZoneName})...");
+    }
+
+    private void TickWaitingForZone()
+    {
+        if (_currentSource == null) { Stop(); return; }
+
+        var currentTerritory = Plugin.ClientState.TerritoryType;
+
+        // Joueur arrivé dans la bonne zone
+        if (_currentSource.TerritoryId == 0 || currentTerritory == _currentSource.TerritoryId)
+        {
+            if (_currentSpawn == null)
+                SetState(HuntState.SearchingMob, $"Recherche de {_currentSource.MobName}...");
+            else
+                SetState(HuntState.NavigatingToSpawn, $"Navigation vers {_currentSource.MobName}...");
+            return;
+        }
+
+        // Met à jour le message périodiquement sans reset le timer
+        StatusMessage = $"En attente... Téléportez-vous vers : {_currentSource.ZoneName}";
     }
 
     private void TickNavigating()
@@ -237,10 +268,11 @@ public class HuntService : IDisposable
         var current = GetInventoryCount(_currentTarget.ItemId);
         var needed  = _currentTarget.TargetQuantity;
 
-        if (current >= needed)
-            SetState(HuntState.SelectingTarget, $"{_currentTarget.ItemName} : objectif atteint ({current}/{needed}) !");
-        else
-            SetState(HuntState.NavigatingToSpawn, $"{_currentTarget.ItemName} : {current}/{needed} — on continue...");
+        // Toujours repasser par SelectingTarget pour réévaluer source/spawn
+        SetState(HuntState.SelectingTarget,
+            current >= needed
+                ? $"{_currentTarget.ItemName} : objectif atteint ({current}/{needed}) !"
+                : $"{_currentTarget.ItemName} : {current}/{needed} — on continue...");
     }
 
     // ─── Helpers ──────────────────────────────────────────────────────────────
