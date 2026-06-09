@@ -83,7 +83,8 @@ public class ConfigWindow : Window
             var entry = gsm->GetGearset(i);
             if (entry == null || !entry->Flags.HasFlag(RaptureGearsetModule.GearsetFlag.Exists))
                 continue;
-            var abbr = sheet?.GetRow(entry->ClassJob)?.Abbreviation.ExtractText() ?? $"Job{entry->ClassJob}";
+            var abbr = sheet?.GetRow(entry->ClassJob).Abbreviation.ExtractText();
+            if (string.IsNullOrEmpty(abbr)) abbr = $"Job{entry->ClassJob}";
             ids.Add(i);
             labels.Add($"[{i + 1}] {abbr}");
         }
