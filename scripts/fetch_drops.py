@@ -121,22 +121,33 @@ def fetch_item(item_id: int) -> tuple[int, dict | None]:
 
 
 def extract_sources(data: dict, zones: dict[int, ZoneInfo]) -> list[dict]:
-    item     = data.get("item", {})
-    mob_ids  = item.get("drops", [])
-    if not mob_ids:
-        return []
-
+    item      = data.get("item", {})
+    alla      = item.get("alla", {}) or {}
+    alla_src  = alla.get("source", [])
     partials  = data.get("partials", [])
+
     mobs_by_id = {
         p["obj"]["i"]: p["obj"]
         for p in partials
         if p.get("type") == "mob" and "i" in p.get("obj", {})
     }
 
+    # Source 1 : drops directs (champ item.drops)
+    mob_ids_direct = item.get("drops") or []
+
+    # Source 2 : LOOT (HW+) — les mobs sont dans les partials mais pas dans item.drops
+    mob_ids_loot = []
+    if "LOOT" in alla_src and not mob_ids_direct:
+        mob_ids_loot = list(mobs_by_id.keys())
+
+    all_mob_ids = mob_ids_direct + mob_ids_loot
+    if not all_mob_ids:
+        return []
+
     seen    : set[tuple] = set()
     sources : list[dict] = []
 
-    for garland_id in mob_ids:
+    for garland_id in all_mob_ids:
         mob = mobs_by_id.get(garland_id)
         if not mob:
             continue
@@ -145,10 +156,14 @@ def extract_sources(data: dict, zones: dict[int, ZoneInfo]) -> list[dict]:
         garland_zone = int(mob.get("z", 0))
         zone_info    = zones.get(garland_zone)
 
-        if bnpc_name_id == 0 or garland_zone == 0 or zone_info is None:
+        # Pour les zones hors Map.csv (HW+), on garde quand même le mob sans résolution de zone
+        territory_id = zone_info.territory_id if zone_info else 0
+        zone_name    = zone_info.name         if zone_info else f"Garland zone {garland_zone}"
+
+        if bnpc_name_id == 0:
             continue
 
-        key = (bnpc_name_id, zone_info.territory_id)
+        key = (bnpc_name_id, garland_zone)
         if key in seen:
             continue
         seen.add(key)
@@ -156,9 +171,9 @@ def extract_sources(data: dict, zones: dict[int, ZoneInfo]) -> list[dict]:
         sources.append({
             "bNpcNameId":  bnpc_name_id,
             "mobName":     mob.get("n", "Unknown"),
-            "territoryId": zone_info.territory_id,
-            "zoneName":    zone_info.name,
-            "positions":   [],   # Garland Tools ne fournit pas de coordonnées de spawn
+            "territoryId": territory_id,
+            "zoneName":    zone_name,
+            "positions":   [],
             "dropRate":    1.0
         })
 
