@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: dotnet build HunterBuddy.csproj --configuration Release --nologo
 
+      - name: Find output dir
+        run: Get-ChildItem -Recurse -Filter "HunterBuddy.dll" | Select-Object -ExpandProperty FullName
+
       - name: Package
         run: |
           $outDir = "bin\x64\Release\HunterBuddy"
