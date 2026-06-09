@@ -107,9 +107,11 @@ public class HuntService : IDisposable
         _currentSource = sources.OrderByDescending(s => s.DropRate).First();
         _currentSpawn  = _currentSource.Positions.FirstOrDefault();
 
+        // Pas de position connue : on scanne directement la zone sans navigation fixe
         if (_currentSpawn == null)
         {
-            SetState(HuntState.Error, $"Aucune position de spawn pour : {_currentSource.MobName}");
+            SetState(HuntState.SearchingMob,
+                $"Scan zone pour {_currentSource.MobName} ({_currentSource.ZoneName}) — naviguez vers la zone si besoin.");
             return;
         }
 
@@ -157,6 +159,14 @@ public class HuntService : IDisposable
         }
 
         if (TimeSinceState() <= TimeSpan.FromSeconds(Plugin.Config.MobSearchTimeoutSec)) return;
+
+        if (_currentSource.Positions.Count == 0)
+        {
+            // Aucune position connue : on attend que le joueur soit dans la bonne zone
+            StatusMessage = $"{_currentSource.MobName} introuvable — êtes-vous dans : {_currentSource.ZoneName} ?";
+            _lastStateChange = DateTime.UtcNow; // reset timeout pour ne pas spammer
+            return;
+        }
 
         // Tenter un autre point de spawn si disponible
         if (_currentSource.Positions.Count > 1)
