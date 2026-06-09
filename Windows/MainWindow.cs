@@ -2,7 +2,7 @@ using Dalamud.Interface.Windowing;
 using FFXIVClientStructs.FFXIV.Client.Game;
 using HunterBuddy.Models;
 using HunterBuddy.Services;
-using ImGuiNET;
+using Dalamud.Bindings.ImGui;
 using Lumina.Excel.Sheets;
 using System.Numerics;
 

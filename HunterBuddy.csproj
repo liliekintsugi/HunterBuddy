@@ -5,6 +5,7 @@
     <AssemblyName>HunterBuddy</AssemblyName>
     <RootNamespace>HunterBuddy</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
