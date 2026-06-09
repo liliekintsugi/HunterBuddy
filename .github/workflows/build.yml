@@ -26,11 +26,11 @@ jobs:
           Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
 
       - name: Build
-        run: dotnet build HunterBuddy/HunterBuddy.csproj --configuration Release --nologo
+        run: dotnet build HunterBuddy.csproj --configuration Release --nologo
 
       - name: Package
         run: |
-          $outDir = "HunterBuddy/bin/Release/net8.0-windows/HunterBuddy"
+          $outDir = "bin/Release/net8.0-windows/HunterBuddy"
           Compress-Archive -Path "$outDir/*" -DestinationPath "HunterBuddy.zip"
 
       - name: Upload artifact
