@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "_info": "Généré depuis les données FFXIV Teamcraft (https://github.com/ffxiv-teamcraft/ffxiv-teamcraft). Clé = ItemId (uint). Voir scripts/fetch-drops.py pour régénérer après un patch.",
+  "drops": {
+    "4576": [
+      {
+        "bNpcNameId": 1845,
+        "mobName": "Aldgoat",
+        "territoryId": 145,
+        "zoneName": "Central Thanalan",
+        "positions": [
+          { "x": 20.3, "y": -1.2, "z": -0.5 },
+          { "x": 23.1, "y": -1.0, "z":  4.2 }
+        ],
+        "dropRate": 0.5
+      }
+    ],
+    "5289": [
+      {
+        "bNpcNameId": 2920,
+        "mobName": "Diremite",
+        "territoryId": 152,
+        "zoneName": "Eastern Thanalan",
+        "positions": [
+          { "x": 14.5, "y": 0.0, "z": -18.3 }
+        ],
+        "dropRate": 0.4
+      }
+    ]
+  }
+}
