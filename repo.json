@@ -1,25 +1,22 @@
-{
-  "Author": "liliekintsugi",
-  "Name": "HunterBuddy",
-  "InternalName": "HunterBuddy",
-  "AssemblyVersion": "1.0.0.0",
-  "TestingAssemblyVersion": "1.0.0.0",
-  "Description": "Farm automatique de drops de mobs. Configurez vos items manquants, HunterBuddy navigue, combat et collecte pour vous.",
-  "Punchline": "Farm de drops de mobs en autopilote.",
-  "RepoUrl": "https://github.com/liliekintsugi/HunterBuddy",
-  "ApplicableVersion": "any",
-  "DalamudApiLevel": 9,
-  "Tags": [
-    "gathering",
-    "combat",
-    "automation",
-    "farming"
-  ],
-  "DownloadLinkInstall": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
-  "DownloadLinkUpdate": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
-  "DownloadLinkTesting": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
-  "DownloadCount": 0,
-  "IsHide": false,
-  "IsTestingExclusive": false,
-  "AcceptsFeedback": true
-}
+[
+  {
+    "Author": "liliekintsugi",
+    "Name": "HunterBuddy",
+    "InternalName": "HunterBuddy",
+    "AssemblyVersion": "1.0.0.0",
+    "TestingAssemblyVersion": "1.0.0.0",
+    "Description": "Farm automatique de drops de mobs. Configurez vos items manquants, HunterBuddy navigue, combat et collecte pour vous.",
+    "Punchline": "Farm de drops de mobs en autopilote.",
+    "RepoUrl": "https://github.com/liliekintsugi/HunterBuddy",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 16,
+    "Tags": ["gathering", "combat", "automation", "farming"],
+    "DownloadLinkInstall": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
+    "DownloadLinkTesting": "https://github.com/liliekintsugi/HunterBuddy/releases/latest/download/HunterBuddy.zip",
+    "DownloadCount": 0,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true
+  }
+]

@@ -54,7 +54,8 @@ jobs:
           $json = Get-Content "repo.json" | ConvertFrom-Json
           $json[0].AssemblyVersion = "$version.0"
           $json[0].TestingAssemblyVersion = "$version.0"
-          $json | ConvertTo-Json -Depth 10 | Set-Content "repo.json"
+          # ConvertTo-Json perd le tableau sur 1 élément — on force le format array
+          "[$($json | ConvertTo-Json -Depth 10)]" | Set-Content "repo.json"
           Write-Host "repo.json mis à jour : $version"
 
       - name: Commit repo.json
